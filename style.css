@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    background-color: #fff;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.header h1{
+    padding: 5px;
+}
+
+.graphics{
+    max-width: 950px;
+    margin: 0 auto;
+
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    
+}
+
+.graphics .card{
+    width: 460px;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: thin solid  rgba(4, 176, 182, 0.59);
+
+    border-radius: 20px 0;
+
+    overflow: hidden;
+
+    margin: 0 5px 40px 5px;
+
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+.graphics .card-final{
+    width: 600px;
+}
+
+
+.graphics .card .title{
+    width: 100%;
+    height: 30px;
+
+    padding: 0 25px;
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(4, 176, 182, 0.59);
+
+    cursor: pointer;
+
+}
+
+.graphics .card .title h4{
+    text-transform: uppercase;
+}
+
+.graphics .card .graphic-content {
+    transition: .17s ease-in;
+}
+
+
+
