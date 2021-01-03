@@ -11,16 +11,103 @@ body{
 }
 
 .header{
+    max-width: 950px;
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
+
+.header .navigation{
+    display: flex;
+
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.header .navigation #show{
+    border-radius: 8px;
+
+    padding: 10px;
+
+    background-color:  rgba(12, 147, 151, 0.63);
+    margin-left: 10px;
+
+    cursor: pointer;
+}
+
+.header .navigation #show:hover{
+    background-color: rgba(12, 147, 151, 0.7);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.header .navigation #close .xis{
+    position: relative;
+
+    height: 30px;
+    width: 30px;
+
+    background: red;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.header .navigation #close .xis:hover{
+    background-color: rgb(201, 6, 6);
+
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.xis:after {
+    content: "";
+
+    position: absolute;
+    top: 47%;
+    left: 15%;
+
+    width: 70%;
+    height: 8%;
+
+    background-color: #fff;
+
+    border-radius: 20px;
+
+    transform: rotate(225deg);
+
+    transition: 1s ease-in-out;
+
+}
+.xis:before {
+    content: "";
+
+    position: absolute;
+    top: 47%;
+    left: 15%;
+
+    width: 70%;
+    height: 8%;
+
+    background-color: #fff;
+
+    border-radius: 20px;
+
+    transform: rotate(-410deg);
+
+    transition: .2s ease-in-out;
+
+}
+
 
 .header h1{
     padding: 5px;
+    font-size: 1.5rem;
 }
 
 .graphics{
@@ -29,7 +116,7 @@ body{
 
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: row;
@@ -37,7 +124,7 @@ body{
 }
 
 .graphics .card{
-    width: 460px;
+    width: 440px;
 
     background-color: #fff;
 
@@ -51,14 +138,18 @@ body{
 
     overflow: hidden;
 
-    margin: 0 5px 40px 5px;
+    margin: 0 10px 40px 5px;
 
     box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.3);
 
 }
 
+.graphics .card .graphic-content{
+    display: flex;
+    justify-content: space-around;
+}
 .graphics .card-final{
-    width: 600px;
+    width: 540px;
 }
 
 
@@ -67,16 +158,23 @@ body{
     height: 30px;
 
     padding: 0 25px;
-
     
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    background-color: rgba(4, 176, 182, 0.59);
+    background-color: rgba(12, 147, 151, 0.63);
 
     cursor: pointer;
 
+}
+
+.graphics .card .title:hover{
+    background-color: rgba(12, 147, 151, 0.7);
+}
+
+.graphics .card-final .title{
+    cursor: auto;
 }
 
 .graphics .card .title h4{
@@ -84,8 +182,9 @@ body{
 }
 
 .graphics .card .graphic-content {
-    transition: .17s ease-in;
+    transition: .17s ease-in-out;
 }
+
 
 
 
