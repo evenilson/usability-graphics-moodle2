@@ -16,13 +16,13 @@ body{
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     height: 50px;
     margin-bottom: 50px;
 }
-
-.header .navigation{
+ 
+.navigation{
     display: flex;
 
     justify-content: space-between;
@@ -31,7 +31,17 @@ body{
     
 }
 
-.header .navigation #show{
+.title-article{
+    width: 95%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 0;
+}
+
+ #show{
     border-radius: 8px;
 
     padding: 10px;
@@ -44,12 +54,12 @@ body{
     transition: .17s ease-in-out;
 }
 
-.header .navigation #show:hover{
+ #show:hover{
     background-color: rgba(12, 147, 151, 0.7);
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
 
-.header .navigation #close .xis{
+ #close .xis{
     position: relative;
 
     height: 30px;
@@ -63,7 +73,7 @@ body{
     transition: .17s ease-in-out;
 }
 
-.header .navigation #close .xis:hover{
+#close .xis:hover{
     background-color: rgb(201, 6, 6);
 
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
